@@ -3,7 +3,7 @@ import defaultColors from './colors';
 const colors = {
   ...defaultColors,
 
-  primary: defaultColors.red,
+  primary: defaultColors.blue,
   primaryDark: defaultColors.blueDark,
   font: '#dddddd',
   fontDark: '#8a8a8a',
