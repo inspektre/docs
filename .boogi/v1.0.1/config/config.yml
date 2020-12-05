@@ -1,0 +1,59 @@
+metadata:
+  name: inspektre docs
+  short_name: docs
+  description: Inspektre Documentation
+  language: en
+  url: 'https://docs.inspektre.io'
+  pathPrefix: /
+  gaTrackingId: null
+  favicon: /assets/favicon.png
+  themeColor: '#0066cc'
+header:
+  enabled: true
+  logo: /assets/logo.png
+  links: []
+sidebar:
+  ignoreIndex: false
+  forcedNavOrder: []
+  expanded: []
+  groups: []
+  links: []
+  poweredBy: {}
+  enabled: true
+pwa:
+  enabled: true
+  manifest:
+    icon: /assets/logo.png
+    display: minimal-ui
+    crossOrigin: anonymous
+features:
+  editOnRepo:
+    editable: true
+    location: 'https://github.com/inspektre/docs.git'
+    type: github
+  search:
+    enabled: true
+    indexName: docs
+    showStats: true
+    pagination:
+      enabled: true
+  rss:
+    enabled: false
+    showIcon: false
+    copyright: ''
+    categories: []
+    matchRegex: ^/
+    outputPath: /rss.xml
+  darkMode:
+    enabled: true
+    default: true
+social:
+  github: 'https://github.com/inspektre'
+  linkedin: 'https://www.linkedin.com/company/inspektreio'
+  mail: contact@inspektre.io
+  twitter: 'https://twitter.com/inspektre'
+search:
+  enabled: true
+  startComponent: icon
+  pagination:
+    enabled: true
