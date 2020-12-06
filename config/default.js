@@ -1,10 +1,10 @@
 module.exports = {
   metadata: {
-    name: 'BooGi',
-    short_name: 'BooGi',
+    name: 'inspektre docs',
+    short_name: 'inspektre docs',
     description: '',
     language: 'en',
-    url: 'http://localhost',
+    url: 'https://docs.inspektre.io',
     pathPrefix: '/',
     gaTrackingId: null,
     siteImage: null,
@@ -30,8 +30,8 @@ module.exports = {
   pwa: {
     enabled: true, // disabling this will also remove the existing service worker.
     manifest: {
-      name: 'BooGi',
-      short_name: 'BooGi',
+      name: 'inspektre docs',
+      short_name: 'inspektre docs',
       start_url: '/',
       background_color: '#6b37bf',
       theme_color: '#6b37bf',
@@ -61,13 +61,13 @@ module.exports = {
     search: {
       enabled: true,
       indexName: 'docs',
-      algoliaAppId: null,
-      algoliaSearchKey: null,
-      algoliaAdminKey: null,
+      algoliaAppId: process.env.GATSBY_ALGOLIA_APP_ID,
+      algoliaSearchKey: process.env.GATSBY_ALGOLIA_SEACH_KEY,
+      algoliaAdminKey: process.env.GATSBY_ALGOLIA_ADMIN_KEY,
       excerptSize: 20000,
-      engine: 'localsearch',
+      engine: 'algolia',
       placeholder: 'Search',
-      startComponent: 'icon', // 'input',
+      startComponent: 'input', //icon',
       debounceTime: 380,
       snippetLength: 23,
       hitsPerPage: 10,
