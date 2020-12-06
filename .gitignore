@@ -5,3 +5,4 @@ yarn.lock
 .dccache
 public/
 .cache/
+.generated.config.js
