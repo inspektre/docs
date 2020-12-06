@@ -60,7 +60,7 @@ module.exports = {
     "features": {
         "editOnRepo": {
             "editable": true,
-            "location": "https://github.com/inspektre/docs.git",
+            "location": "https://github.com/inspektre/docs",
             "type": "github"
         },
         "search": {

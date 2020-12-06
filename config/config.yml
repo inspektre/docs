@@ -29,10 +29,11 @@ pwa:
 features:
   editOnRepo:
     editable: true
-    location: 'https://github.com/inspektre/docs.git'
+    location: 'https://github.com/inspektre/docs'
     type: github
   search:
     enabled: true
+    engine: algolia
     indexName: docs
     showStats: true
     pagination:
