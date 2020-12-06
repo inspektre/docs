@@ -24,7 +24,7 @@ var plugins = [{
       options: {"plugins":[],"siteUrl":"https://docs.inspektre.io","stripQueryString":true},
     },{
       plugin: require('/Users/uday/docs/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"BooGi","short_name":"BooGi","start_url":"/","background_color":"#6b37bf","theme_color":"#6b37bf","display":"minimal-ui","crossOrigin":"anonymous","icon":"static/assets/logo.png","description":"Inspektre Documentation","cache_busting_mode":"none","include_favicon":false,"lang":"en","legacy":true,"theme_color_in_head":true,"cacheDigest":null},
+      options: {"plugins":[],"name":"inspektre docs","short_name":"inspektre docs","start_url":"/","background_color":"#6b37bf","theme_color":"#6b37bf","display":"minimal-ui","crossOrigin":"anonymous","icon":"static/assets/logo.png","description":"Inspektre Documentation","cache_busting_mode":"none","include_favicon":false,"lang":"en","legacy":true,"theme_color_in_head":true,"cacheDigest":null},
     },{
       plugin: require('/Users/uday/docs/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[],"appendScript":"/Users/uday/docs/src/custom-sw-code.js"},

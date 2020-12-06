@@ -40,7 +40,7 @@ const algolia = (indexName, excerptSize) => {
 const localsearch = (excerptSize) => ({
   query: query(excerptSize),
   normalizer: transformer,
-  name: 'Boogi',
+  name: 'inspektre',
   ref: 'objectID',
   index: ['title', 'description', 'excerpt'],
   store: ['slug', 'title', 'excerpt'],
@@ -49,7 +49,7 @@ const localsearch = (excerptSize) => ({
 const disableLocalSearchPlugin = {
   resolve: require.resolve(`../../plugins/gatsby-plugin-disable-localsearch`),
   options: {
-    name: 'Boogi',
+    name: 'inspektre',
   },
 };
 

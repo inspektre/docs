@@ -3,15 +3,15 @@
     "develop": {
       "plugins": [
         {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
           "name": "@loadable/babel-plugin",
           "options": {}
         },
         {
           "name": "/Users/uday/docs/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "@babel/plugin-proposal-export-default-from",
           "options": {}
         },
         {
@@ -24,6 +24,10 @@
         },
         {
           "name": "/Users/uday/docs/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "@babel/plugin-proposal-export-default-from",
           "options": {}
         }
       ],
@@ -39,7 +43,10 @@
         {
           "name": "/Users/uday/docs/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -51,15 +58,15 @@
     "develop-html": {
       "plugins": [
         {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
           "name": "@loadable/babel-plugin",
           "options": {}
         },
         {
           "name": "/Users/uday/docs/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "@babel/plugin-proposal-export-default-from",
           "options": {}
         },
         {
@@ -72,6 +79,10 @@
         },
         {
           "name": "/Users/uday/docs/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "@babel/plugin-proposal-export-default-from",
           "options": {}
         }
       ],
@@ -87,7 +98,10 @@
         {
           "name": "/Users/uday/docs/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -99,15 +113,15 @@
     "build-html": {
       "plugins": [
         {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
           "name": "@loadable/babel-plugin",
           "options": {}
         },
         {
           "name": "/Users/uday/docs/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "@babel/plugin-proposal-export-default-from",
           "options": {}
         },
         {
@@ -120,6 +134,10 @@
         },
         {
           "name": "/Users/uday/docs/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "@babel/plugin-proposal-export-default-from",
           "options": {}
         }
       ],
@@ -135,7 +153,10 @@
         {
           "name": "/Users/uday/docs/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
@@ -147,15 +168,15 @@
     "build-javascript": {
       "plugins": [
         {
+          "name": "babel-plugin-lodash",
+          "options": {}
+        },
+        {
           "name": "@loadable/babel-plugin",
           "options": {}
         },
         {
           "name": "/Users/uday/docs/node_modules/gatsby-plugin-mdx/node_modules/@babel/plugin-proposal-object-rest-spread/lib/index.js",
-          "options": {}
-        },
-        {
-          "name": "@babel/plugin-proposal-export-default-from",
           "options": {}
         },
         {
@@ -168,6 +189,10 @@
         },
         {
           "name": "/Users/uday/docs/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
+          "options": {}
+        },
+        {
+          "name": "@babel/plugin-proposal-export-default-from",
           "options": {}
         }
       ],
@@ -183,7 +208,10 @@
         {
           "name": "/Users/uday/docs/node_modules/@babel/preset-typescript/lib/index.js",
           "options": {
-            "plugins": []
+            "plugins": [],
+            "allExtensions": false,
+            "isTSX": false,
+            "jsxPragma": "React"
           }
         }
       ],
