@@ -66,11 +66,10 @@ module.exports = {
         "search": {
             "enabled": true,
             "indexName": "docs",
-            "algoliaAppId": null,
-            "algoliaSearchKey": null,
-            "algoliaAdminKey": null,
+            "algoliaAppId": "XW6AFRQWUY",
+            "algoliaAdminKey": "be00fb1a9d27aaf543af5a1220213a20",
             "excerptSize": 20000,
-            "engine": "localsearch",
+            "engine": "algolia",
             "placeholder": "Search",
             "startComponent": "icon",
             "debounceTime": 380,
@@ -121,7 +120,7 @@ module.exports = {
         "rss": {
             "enabled": false,
             "showIcon": false,
-            "title": "My RSS feed",
+            "title": "inspektre docs",
             "copyright": "",
             "webMaster": "M",
             "managingEditor": "",
@@ -141,7 +140,7 @@ module.exports = {
         "publishDraft": false,
         "fullScreenMode": {
             "enabled": false,
-            "hideHeader": true,
+            "hideHeader": false,
             "hideToc": true,
             "hideSidebar": true
         }

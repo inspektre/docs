@@ -10,7 +10,7 @@ import { onMobile } from '../../styles/responsive';
 import { visibleMobile, shadowAround } from '../../styles';
 
 const Algolia = loadable(() => import('./algolia/'))
-const LocalSearch = loadable(() => import('./localsearch/'))
+// const LocalSearch = loadable(() => import('./localsearch/'))
 
 const SearchWrapper = styled.div`
   display: flex;
@@ -62,8 +62,8 @@ const SearchEngine = React.forwardRef((props, ref) => {
   switch(engine) {
     case 'algolia':
       return <Algolia inputRef={ref} index={config.features.search.indexName} />
-    case 'localsearch':
-      return <LocalSearch inputRef={ref} />
+    // case 'localsearch':
+    //   return <LocalSearch inputRef={ref} />
   }
   console.warn(`Unsupported search engine: ${engine}`);
   return null;

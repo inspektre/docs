@@ -55,7 +55,7 @@ module.exports = {
   features: {
     editOnRepo: {
       editable: true,
-      location: 'https://github.com/filipowm/boogi',
+      location: 'https://github.com/inspektre/docs',
       type: 'github',
     },
     search: {
@@ -67,7 +67,7 @@ module.exports = {
       excerptSize: 20000,
       engine: 'algolia',
       placeholder: 'Search',
-      startComponent: 'input', //icon',
+      startComponent: 'icon', // 'input',
       debounceTime: 380,
       snippetLength: 23,
       hitsPerPage: 10,
@@ -115,7 +115,7 @@ module.exports = {
     rss: {
       enabled: true,
       showIcon: true,
-      title: 'My RSS feed',
+      title: 'inspektre docs',
       copyright: '',
       webMaster: 'M',
       managingEditor: '',
@@ -132,7 +132,7 @@ module.exports = {
     publishDraft: false,
     fullScreenMode: {
       enabled: false,
-      hideHeader: true,
+      hideHeader: false,
       hideToc: true,
       hideSidebar: true
     }
