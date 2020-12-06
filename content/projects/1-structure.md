@@ -8,8 +8,7 @@ metaDescription: "Inspektre Project Structure"
 Project(s) on-boarded on inspektre are enhanced to create meaningful knowledge-graphs and help providing contextually relevant information. Below graph shows a quick high-level view on how inspektre graphs look like.
 
 # Structure
-Below is a representative structure of how a project is analysed to produce security score.
-
+Below is an end-to-end data-flow of data from CI/CD to what is visible on a dashboard.
 ```mermaid
 graph TD
     A[Project] -->|CI/CD Pipeline| B(Inspektre API)
@@ -26,19 +25,30 @@ graph TD
     F --> |Detect Attacks| G
     G --> H(Likelihood of Attacks)
     G --> I(Severity of Attacks)
-    G --> CONF(Confide)
+    G --> DASH(Dasboard)
+    DASH --> CONF(Confidentiality)
+    DASH --> INT(Integrity)
+    DASH --> AVAIL(Availability)
+    DASH --> AUTHZ(Authorization)
+    DASH --> ACL(Access Control)
     H --> J(Project Security Score)
     I --> J
     F --> J
     E --> J
     J --> K(Organization Security Score)
+    J --> DASH
+    K --> DASH
+    AS --> DASH
+    G --> DASH
 ```
 
+Further, 
 ```mermaid
 pie
     title Security Goals
-    "Calcium" : 42.96
-    "Potassium" : 50.05
-    "Magnesium" : 10.01
-    "Iron" :  5
+    "Confidentiality" : 42%
+    "Integrity" : 50%
+    "Availability" : 10%
+    "Authorization" :  5%
+    "Access Control": 7%
 ```
