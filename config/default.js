@@ -103,7 +103,7 @@ module.exports = {
       excludePaths: ['/'],
       height: 3,
       prependToBody: false,
-      color: '#A05EB5',
+      color: '#000000',
     },
     mermaid: {
       language: 'mermaid',

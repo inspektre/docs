@@ -43,7 +43,7 @@ const Input = styled.input`
   border-width: 0 !important;
   &,
   ::placeholder {
-    color: ${(props) => props.theme.colors.gray};
+    color: ${(props) => props.theme.colors.primary};
   }
 `;
 
@@ -69,7 +69,7 @@ const Form = styled.form`
     outline: none;
     background-color: transparent;
     input, input::placeholder{
-      color: ${(props) => props.theme.colors.grayDark};
+      color: ${(props) => props.theme.colors.primary};
     }
     svg {
       stroke: ${(props) => props.theme.colors.grayDark};
