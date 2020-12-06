@@ -2,6 +2,10 @@
 
 Inspektre Documentation
 
+# Domains
+- Production: `https://docs.inspektre.io`
+- Development: `https://staging.docs.inspektre.io`
+
 ## Developing
 
 To start development server with live reload when something changes:
