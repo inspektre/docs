@@ -29,8 +29,8 @@ module.exports = {
     },
     "pwa": {
         "manifest": {
-            "name": "BooGi",
-            "short_name": "BooGi",
+            "name": "inspektre docs",
+            "short_name": "inspektre docs",
             "start_url": "/",
             "background_color": "#6b37bf",
             "theme_color": "#6b37bf",
