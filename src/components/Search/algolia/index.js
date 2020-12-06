@@ -43,8 +43,8 @@ class Algolia extends React.Component {
   constructor(props) {
     super(props);
     this.searchClient = algoliasearch(
-      config.features.search.algoliaAppId,
-      config.features.search.algoliaSearchKey
+      process.env.GATSBY_ALGOLIA_APP_ID,
+      process.env.GATSBY_ALGOLIA_SEARCH_KEY
     );
     this.ref = createRef();
     this.inputRef = props.inputRef;

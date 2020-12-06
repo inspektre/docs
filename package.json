@@ -84,9 +84,12 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "start": "gatsby develop",
-    "build": "gatsby build --prefix-paths",
-    "format": "prettier --ignore-path \".gitignore\" --write \"**/*.{js,jsx,css,json}\"",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
     "lint": "eslint --fix \"**/*.{js,jsx}\""
   },
   "devDependencies": {

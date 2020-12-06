@@ -127,7 +127,7 @@ module.exports = {
     },
     darkMode: {
       enabled: true,
-      default: false,
+      default: true,
     },
     publishDraft: false,
     fullScreenMode: {
