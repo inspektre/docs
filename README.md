@@ -2,14 +2,12 @@
 
 Inspektre Documentation
 
-This app was created with [BooGi](https://boogi.netlify.app).
-
 ## Developing
 
 To start development server with live reload when something changes:
 
 ```bash
-boogi develop
+gatsby develop
 ```
 
 ## Building
@@ -17,7 +15,7 @@ boogi develop
 To build application package ready for deployment:
 
 ```bash
-boogi build
+gatsby build
 ```
 
 Built package will be created in `public` directory.
