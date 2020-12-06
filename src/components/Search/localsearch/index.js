@@ -51,73 +51,73 @@ const search = (query, index, store, page) => {
   };
 };
 
-const LocalSearch = ({ inputRef }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        localSearchBoogi {
-          index
-          store
-        }
-      }
-    `}
-    render={({ localSearchBoogi: { index, store } }) => {
-      const [query, setQuery] = useState(null);
-      const [focus, setFocus] = useState(false);
-      const [page, setPage] = useState(1);
-      const switchPage = (page) => {
-        setPage(page);
-      };
+// const LocalSearch = ({ inputRef }) => (
+//   <StaticQuery
+//     query={graphql`
+//       query {
+//         localSearchBoogi {
+//           index
+//           store
+//         }
+//       }
+//     `}
+//     render={({ localSearchBoogi: { index, store } }) => {
+//       const [query, setQuery] = useState(null);
+//       const [focus, setFocus] = useState(false);
+//       const [page, setPage] = useState(1);
+//       const switchPage = (page) => {
+//         setPage(page);
+//       };
 
-      const searchResult = search(query, index, store, page);
-      const showResults = query && query.length > 1 && focus;
-      return (
-        <>
-          <Input
-            refine={(value) => setQuery(value)}
-            inputRef={inputRef}
-            onFocus={() => setFocus(true)}
-            {...{ focus }}
-          />
-          <div style={{ flex: '1' }}>
-            {showResults && config.features.search.showStats ? (
-              <Stats
-                nbHits={searchResult.nbHits}
-                processingTimeMS={searchResult.processingTimeMS}
-              />
-            ) : null}
-            {showResults && searchResult && searchResult.hits.length === 0 ? (
-              <Results q={query} />
-            ) : null}
-            <HitsWrapper>
-              <ul>
-                {searchResult.hits.map((hit) => (
-                  <PageHit
-                    key={hit.slug}
-                    hit={hit}
-                    q={query}
-                    maxWords={config.features.search.snippetLength}
-                  />
-                ))}
-              </ul>
-            </HitsWrapper>
-          </div>
-          {showResults &&
-          searchResult.hits.length > 0 &&
-          config.features.search.pagination.enabled ? (
-            <Pagination
-              totalPages={config.features.search.pagination.totalPages}
-              showPrevious={config.features.search.pagination.showPrevious}
-              showNext={config.features.search.pagination.showNext}
-              refine={switchPage}
-              nbPages={searchResult.pages}
-              currentPage={page}
-            />
-          ) : null}
-        </>
-      );
-    }}
-  />
-);
+//       const searchResult = search(query, index, store, page);
+//       const showResults = query && query.length > 1 && focus;
+//       return (
+//         <>
+//           <Input
+//             refine={(value) => setQuery(value)}
+//             inputRef={inputRef}
+//             onFocus={() => setFocus(true)}
+//             {...{ focus }}
+//           />
+//           <div style={{ flex: '1' }}>
+//             {showResults && config.features.search.showStats ? (
+//               <Stats
+//                 nbHits={searchResult.nbHits}
+//                 processingTimeMS={searchResult.processingTimeMS}
+//               />
+//             ) : null}
+//             {showResults && searchResult && searchResult.hits.length === 0 ? (
+//               <Results q={query} />
+//             ) : null}
+//             <HitsWrapper>
+//               <ul>
+//                 {searchResult.hits.map((hit) => (
+//                   <PageHit
+//                     key={hit.slug}
+//                     hit={hit}
+//                     q={query}
+//                     maxWords={config.features.search.snippetLength}
+//                   />
+//                 ))}
+//               </ul>
+//             </HitsWrapper>
+//           </div>
+//           {showResults &&
+//           searchResult.hits.length > 0 &&
+//           config.features.search.pagination.enabled ? (
+//             <Pagination
+//               totalPages={config.features.search.pagination.totalPages}
+//               showPrevious={config.features.search.pagination.showPrevious}
+//               showNext={config.features.search.pagination.showNext}
+//               refine={switchPage}
+//               nbPages={searchResult.pages}
+//               currentPage={page}
+//             />
+//           ) : null}
+//         </>
+//       );
+//     }}
+//   />
+// );
 
-export default LocalSearch;
+// export default LocalSearch;

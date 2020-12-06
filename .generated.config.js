@@ -71,7 +71,7 @@ module.exports = {
             "excerptSize": 20000,
             "engine": "algolia",
             "placeholder": "Search",
-            "startComponent": "input",
+            "startComponent": "icon",
             "debounceTime": 380,
             "snippetLength": 23,
             "hitsPerPage": 10,
@@ -120,7 +120,7 @@ module.exports = {
         "rss": {
             "enabled": false,
             "showIcon": false,
-            "title": "My RSS feed",
+            "title": "inspektre docs",
             "copyright": "",
             "webMaster": "M",
             "managingEditor": "",
@@ -140,7 +140,7 @@ module.exports = {
         "publishDraft": false,
         "fullScreenMode": {
             "enabled": false,
-            "hideHeader": true,
+            "hideHeader": false,
             "hideToc": true,
             "hideSidebar": true
         }
