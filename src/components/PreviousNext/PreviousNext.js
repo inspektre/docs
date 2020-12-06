@@ -178,10 +178,10 @@ const setArrowNavigation = (previous, next) => {
   useEffect(() => {
     document.onkeydown = (e) => {
       e = e || window.event;
-      if (e.keyCode == '37' && previous.url) {
+      if (e.keyCode === '37' && previous.url) {
         // left arrow
         navigate(previous.url);
-      } else if (e.keyCode == '39' && next.url) {
+      } else if (e.keyCode === '39' && next.url) {
         // right arrow
         navigate(next.url);
       }
