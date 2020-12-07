@@ -42,13 +42,13 @@ Permissions are sorted by actions a user can do with data.
 ```CodeIntel: Update```
 ```Sarif: Update```
 
-## Permissions when merging data
+## 4. Permissions when merging data
 ```Project: Merge```
 ```Scans: Merge```
 ```CodeIntel: Merge```
 ```Sarif: Merge```
 
-## Permissions when deleting data
+## 5. Permissions when deleting data
 ```Project: Delete```
 ```Scans: Delete```
 ```CodeIntel: Delete```
