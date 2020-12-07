@@ -158,7 +158,7 @@ const calculateFlatNavigation = (edges) => {
   navigation.children.forEach(group => {
     flat(group, acc)
   })
-  return acc;;
+  return acc;
 };
 
 export { getNavigationData, calculateNavigation, calculateFlatNavigation };

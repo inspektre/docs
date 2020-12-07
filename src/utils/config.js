@@ -38,6 +38,7 @@ class EnvReader extends ConfigReader {
   readArray(key) {
     const value = this.readValue(key);
     if (value) {
+      // deepcode ignore StringMethodOnNonString: Not Expecting Float
       return value.split(',').map(String.trim);
     }
     return value;

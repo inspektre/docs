@@ -128,6 +128,7 @@ export default class MDXRuntimeTest extends React.Component {
     const headTitle = metaTitle ? metaTitle : emoji.clean(docTitle);
     return (
       <Layout {...this.props}>
+        {/* deepcode ignore OR: Not an actual Route - This is a template */}
         <Seo frontmatter={mdx.frontmatter} url={this.props.location.href} title={headTitle} />
         <PageTitle>
           <TitleWrapper>
