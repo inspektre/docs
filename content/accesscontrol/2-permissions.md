@@ -4,62 +4,52 @@ metaTitle: "Inspektre | Permissions"
 metaDescription: "Permissions"
 ---
 
-# Color Codes
-
 
 # List of available permissions
+Permissions are sorted by actions a user can do with data.
 
-## Creating data
-<Badge>Default Badge</Badge>
+1. Creating data
+2. Reading data
+3. Update data
+4. Merge data
+5. Delete data
 
-## Reading data
-<Badge color="green">Cve: Read</Badge>
-<Badge color="green">Cpe: Read</Badge>
-<Badge color="green">Asvs: Read</Badge>
-<Badge color="green">AttackPattern: Read</Badge>
-<Badge color="green">Project: Read</Badge>
-<Badge color="green">WeaknessPattern: Read</Badge>
-<Badge color="green">MaliciousActor: Read</Badge>
-<Badge color="green">Remediation: Read</Badge>
-<Badge color="green">Scans: Read</Badge>
-<Badge color="green">Sarif: Read</Badge>
-<Badge color="green">CodeIntel: Read</Badge>
+## 1. Permissions when creating data
+```Project: Create```
+```MaliciousActor: Create```
+```Remediation: Create```
+```CodeIntel: Create```
+```Scans: Create```
+```Sarif: Create```
 
-## Update data
-<Badge color="orange">Default Badge</Badge>
-
-## Merge data
-<Badge color="orange">Default Badge</Badge>
-
-## Delete data
-<Badge color="red">Default Badge</Badge>
-
-
-
-
-Project: Create
-MaliciousActor: Create	
-Remediation: Create
-CodeIntel: Create	
-Scans: Create
-Sarif: Create
-
-Project: Update	
-Project: Delete
-Project: Merge
+## 2. Permissions when reading data
+```Cve: Read```
+```Cpe: Read```
+```Asvs: Read```
+```AttackPattern: Read```
+```Project: Read```
+```WeaknessPattern: Read```
+```MaliciousActor: Read```
+```Remediation: Read```
+```Scans: Read```
+```Sarif: Read```
+```CodeIntel: Read```
 
 
+## 3. Permissions when updating data
+```Project: Update```
+```Scans: Update```
+```CodeIntel: Update```
+```Sarif: Update```
 
-Scans: Delete	
-Scans: Merge	
-Scans: Update	
+## Permissions when merging data
+```Project: Merge```
+```Scans: Merge```
+```CodeIntel: Merge```
+```Sarif: Merge```
 
-
-CodeIntel: Update
-CodeIntel: Delete	
-CodeIntel: Merge
-
-
-Sarif: Delete	
-Sarif: Update
-Sarif: Merge
+## Permissions when deleting data
+```Project: Delete```
+```Scans: Delete```
+```CodeIntel: Delete```
+```Sarif: Delete```
