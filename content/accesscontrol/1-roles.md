@@ -15,10 +15,3 @@ Below listed are roles are currently available on Inspektre. More roles may be a
 | Scanner       | Role suited for CI/CD Pipelines               |
 | Developer     | Role suited for Software Developers           |
 | Security      | Suitable role for software Security personnel |
-
-
-  Admin
-  Inspektre
-  Scanner
-  Developer
-  Security
