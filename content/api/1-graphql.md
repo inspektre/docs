@@ -27,6 +27,3 @@ open-source utilities available under OSS Licenses that are developed & maintain
 # Downloading the electron app
 
 Please locate the GraphQL Playground App from the latest released  https://github.com/graphql/graphql-playground/releases
-
-<Caution>
-</Warning>
