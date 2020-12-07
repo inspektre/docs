@@ -14,7 +14,7 @@ header:
   links: []
 sidebar:
   ignoreIndex: false
-  forcedNavOrder: ['/', '/ontology', '/gettingstarted', '/projects', '/api']
+  forcedNavOrder: ['/', '/ontology', '/gettingstarted', '/accesscontrol', '/projects', '/api']
   expanded: []
   groups: []
   links: []
