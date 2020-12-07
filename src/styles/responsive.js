@@ -5,6 +5,7 @@ const breakpointsInt = {
 
 const breakpoints = {};
 
+// deepcode ignore ArrayMethodCallbackShouldReturn: Wont-Fix
 Object.keys(breakpointsInt).map(function (key, index) {
   breakpoints[key] = breakpointsInt[key] + 'px';
 });

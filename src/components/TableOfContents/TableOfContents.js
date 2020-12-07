@@ -197,6 +197,7 @@ const TableOfContents = ({ show, className, location }) => (
             scrollspyRef.current &&
             !tocItemsEqual(scrollspyRef.current.props.items, scrollspyRef.current.state.targetItems)
           ) {
+            // deepcode ignore PromiseNotCaughtGeneral: ScrollSpy fallback ? - ToDo
             sleep(200).then(() => {
               if (scrollspyRef.current) {
                 scrollspyRef.current._initFromProps();
