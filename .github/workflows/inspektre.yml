@@ -1,4 +1,8 @@
-on: push
+name: "Inspektre Scan"
+on:
+  push:
+    branches:
+      - main
 jobs:
   scan:
     runs-on: ubuntu-latest

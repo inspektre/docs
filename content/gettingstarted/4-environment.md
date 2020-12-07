@@ -19,11 +19,11 @@ A Unique OAuth2 ClientID/Client Secret pair that is created per customer. Additi
 <Warning>OAuth2 ClientID must be treated as a secret. We recommend to encrypt these values using tools such as a PAM.</Warning>
 
 # Device Authorization Flow - Dynamic Values.
-`INSPEKTRE_TOKEN` is a dynamic value i.e. with expiry. When Authorization is complete, 
+`INSPEKTRE_TOKEN` `INSPEKTRE_ACCESS_TOKEN`
 <Card>
 INSPEKTRE_TOKEN
 </Card>
-
+INSPEKTRE_TOKEN is a dynamic value i.e. with expiry. When Authorization is complete, 
 - Inspektre CLI/SDK requires static values to be available as environment variables.
 - This is essentially an OAuth2 Refresh Token that expires in 30 days.
 - For `CLI Usage`, Do not save this token.
@@ -32,16 +32,11 @@ INSPEKTRE_TOKEN
 
 <Warning>Environment variables are CASE-SENSITIVE. Please ensure that they are capitalized alwys</Warning>
 
-# Initialization
-Type`inspektre init` in a terminal to start initialization. Initialization option creates necessary configuration files/directories under the current user's context and must be used on trusted compute systems only.
+<Card>
+INSPEKTRE_ACCESS_TOKEN
+</Card>
+INSPEKTRE_ACCESS_TOKEN is a short-life JWT that is generated when `inspektre authorize` or `inspektre reauthorize` succeed.
 
-<Info>
-For common use-cases such as a CI/CD pipeline, do not use initialization. Instead configure and use required secrets.
-</Info>
-
-
-# Verify Initialization
-Inspektre create a configuration file that would later hold session key. Please find the list of locations by Operating Systems.
-- Micosoft Windows: `C:\Users\<user>\.config\inspektre\.env`
-- Mac OS X: `/Users/<user>/.config/inspektre/.env`
-- ChromeOS & Linux (Debian/Fedora/): `/home/<user>/.config/inspektre/.env`
+<Warning>
+INSPEKTRE_ACCESS_TOKEN contains sensitive authentication & authorization content and  must be treated as a secret.
+</Warning>

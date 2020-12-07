@@ -13,3 +13,8 @@ metaDescription: "Authorization"
 - [Authorize Inspektre CLI](https://asciinema.org/a/377658)
 
 - [Reauthorize Inspektre CLI](https://asciinema.org/a/377708)
+
+
+# Using Inspektre API
+
+In the `APi Section`
