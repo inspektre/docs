@@ -22,3 +22,7 @@ To install or upgrade inspektre with `yarn`, type the below in a terminal
 
 # From the source
 To use inspektre SDK from the source, visit `https://github.com/inspektre/inspektre`.
+
+
+# Video Cast
+Watch [Installing Inspektre CLI](https://asciinema.org/a/377396).
