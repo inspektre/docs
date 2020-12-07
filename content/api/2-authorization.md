@@ -16,7 +16,9 @@ API Authorization with GraphQL Playground can be accomplished by setting authori
 
 
 ## Temporary Access
-Visit https://app.inspektre.io/#/profile/user and click on the button `Authorization Token`.
+1. Visit https://app.inspektre.io/#/profile/user and click on the button `Authorization Token` to copy token to clipboard.
+2. Paste the token under the `HTTP Headers` in GraphQL Playground.
+3. Check the screenshot below for look & feel.
 
 ## Device Authorization Flow
 1. Install Inspektre SDK/CLI<Link to="https://docs.inspektre.io/gettingstarted/2-installation"> (Instructions)</Link>
@@ -26,6 +28,9 @@ Visit https://app.inspektre.io/#/profile/user and click on the button `Authoriza
     - Micosoft Windows: `C:\Users\<user>\.config\inspektre\.env`
     - Mac OS X: `/Users/<user>/.config/inspektre/.env`
     - ChromeOS & Linux (Debian/Fedora/): `/home/<user>/.config/inspektre/.env`
+5. Copy the the token and Paste the token under the `HTTP Headers` in GraphQL Playground.
+6. Check the screenshot below for look & feel.
+
 
 # Screenshot
 ![GraphQL Playground](./auth-header.png)
