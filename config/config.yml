@@ -14,11 +14,11 @@ header:
   links: []
 sidebar:
   ignoreIndex: false
-  forcedNavOrder: []
+  forcedNavOrder: ['/', '/ontology', '/gettingstarted', '/projects', '/api']
   expanded: []
   groups: []
   links: []
-  poweredBy: {}
+  poweredBy: {'inspektre docs'}
   enabled: true
 pwa:
   enabled: true
