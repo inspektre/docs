@@ -41,15 +41,15 @@ module.exports = {
   },
   social: {
     facebook: '',
-    github: '',
+    github: 'https://github.com/inspektre',
     gitlab: '',
     instagram: '',
-    linkedin: '',
-    mail: '',
+    linkedin: 'https://www.linkedin.com/company/inspektreio',
+    mail: 'contact@inspektre.io',
     gmail: '',
     slack: '',
     twich: '',
-    twitter: '',
+    twitter: 'https://twitter.com/inspektre',
     youtube: '',
   },
   features: {
@@ -57,6 +57,7 @@ module.exports = {
       editable: true,
       location: 'https://github.com/inspektre/docs',
       type: 'github',
+      branch: 'main',
     },
     search: {
       enabled: true,
