@@ -21,7 +21,7 @@
         },
         {
           "key": "Access-Control-Allow-Origin", 
-          "value": "xw6afrqwuy-3.algolianet.com"
+          "value": "https://inspektre.io https://docs.inspektre.io https://js-agent.newrelic.com https://bam.nr-data.net"
         },
         {
           "key": "strict-transport-security",
@@ -38,6 +38,14 @@
         {
           "key": "Referrer-Policy",
           "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Feature-Policy",
+          "value": "fullscreen *"
+        },
+        {
+          "key":"Permissions-Policy",
+          "value": "fullscreen=*"
         }
       ]
     }
