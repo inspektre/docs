@@ -2,8 +2,8 @@
 
 Inspektre Documentation
 
-# Domains
-- Visit [inspektre docs](`https://docs.inspektre.io`)
+# Visit
+Visit (inspektre docs)[`https://docs.inspektre.io`]
 
 
 ## Developing
