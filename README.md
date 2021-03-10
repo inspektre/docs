@@ -3,7 +3,7 @@
 Inspektre Documentation
 
 # Visit
-Visit (inspektre docs)[`https://docs.inspektre.io`]
+Visit [inspektre docs](https://docs.inspektre.io)
 
 
 ## Developing
