@@ -3,8 +3,8 @@
 Inspektre Documentation
 
 # Domains
-- Production: `https://docs.inspektre.io`
-- Development: `https://staging.docs.inspektre.io`
+- Visit [inspektre docs](`https://docs.inspektre.io`)
+
 
 ## Developing
 
