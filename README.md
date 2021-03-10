@@ -1,9 +1,6 @@
 # inspektre docs
 
-Inspektre Documentation
-
-# Visit
-Visit [inspektre docs](https://docs.inspektre.io)
+To read Inspektre Documentation,Visit [inspektre docs](https://docs.inspektre.io)
 
 
 ## Developing
